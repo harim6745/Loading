@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".food1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:scaleX="0.67"
+        android:scaleY="0.56"
+        android:src="@drawable/high"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="상품바코드를 찍어 주세요."
+        android:textColor="#000"
+        android:textSize="25dp"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:src="@drawable/barcode_icon" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/scanbtn"
+            android:background="@drawable/camera_icon"
+            android:scaleX="0.6"
+            android:scaleY="0.5" />
+
+        <!--
+        <selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item
+                android:drawable="@drawable/botton_press"
+                android:state_pressed="true" />
+
+            <item android:drawable="@drawable/botton" />
+        </selector>-->
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/botton"
+            android:letterSpacing="0.4"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:text="돌아가기"
+            android:textAlignment="center"
+            android:textColor="#ffff"
+            android:textSize="50sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/button_honey_commu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/botton"
+            android:letterSpacing="0.4"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:text="꿀조합 페이지"
+            android:textAlignment="center"
+            android:textColor="#ffff"
+            android:textSize="50sp"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:id="@+id/barcodetextview"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttontoast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toastbarcode" />
+
+
+    </FrameLayout>
+
+</FrameLayout>

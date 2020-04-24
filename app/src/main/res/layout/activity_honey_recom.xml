@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Honey_recom"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="꿀조합추천"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/layout1"
+            android:layout_gravity="center"
+            android:scaleY="1.2"
+            android:scaleX="1.2"
+            android:layout_marginBottom="120dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제품구성\n총 칼로리\n총 영양성분\n평균평점"
+            android:textSize="30dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginTop="380dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:text="돌아갈래"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="560dp"
+            android:background="#ff8500" />
+
+        <Button
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="205dp"
+            android:text="리뷰보기"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="560dp"
+            android:background="#ff8500" />
+
+
+    </FrameLayout>
+
+</LinearLayout>

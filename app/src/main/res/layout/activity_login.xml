@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="#FF8500"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ff8500"
+            >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleY="0.8"
+        android:scaleX="0.8"
+        android:layout_gravity="center"
+        android:src="@drawable/____" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Login !"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+       />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+       >
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center"
+            >
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:background="#ff8500"
+                android:hint="id"
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+
+                />
+
+            <EditText
+
+                android:inputType="textPassword"
+
+                android:layout_width="250dp"
+
+                android:layout_height="wrap_content"
+
+                android:hint="PASSWORD"
+
+                android:layout_gravity="center"
+
+                android:padding="10dp"
+
+                android:textColor="#ffffff"
+
+                android:textColorHint="#ffffff"
+
+                android:id="@+id/pw"
+
+                android:layout_marginTop="20dp"
+
+                android:background="#ff8500"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+            <Button
+                android:id="@+id/login"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:background="#FFCA6C"
+                android:textColor="#fff"
+                android:layout_marginTop="40dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:id="@+id/intent_join_btn"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="#FFCA6C"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:text="JOIN"
+                android:layout_gravity="center"
+                />
+
+                <TextView
+                    android:layout_width="500dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/result"
+                    android:layout_marginTop="10dp"
+                    android:hint="result"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+        <!--
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/add_food"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:hint="닉네임을 입력하세요.">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:hint="Password"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/intent_bt_go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GO"
+            android:background="#000"
+            android:textColor="#fff"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/intent_join_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:text="처음 사용하십니까 ?"
+            android:layout_gravity="right"
+            android:elevation="0dp"
+            android:layout_margin="5dp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+            -->

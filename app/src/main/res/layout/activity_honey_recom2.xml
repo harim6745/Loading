@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Honey_recom2"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="209dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:text="케미리뷰"
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="44dp"
+            android:layout_height="36dp"
+            android:layout_gravity="start|right"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/menu" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-38dp"
+            android:layout_gravity="left"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:layout_marginTop="-20dp"
+            android:src="@drawable/layout1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+            android:layout_gravity="right"
+            android:scaleX="0.65"
+            android:scaleY="0.65"
+            android:layout_marginTop="-20dp"
+            android:src="@drawable/layout1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="260dp"
+            android:text="총 리뷰 @개"
+            android:textColor="@android:color/black"
+            android:textSize="25dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="리뷰쓰기"
+            android:background="#ff8500"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="255dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/plus"
+            android:layout_marginBottom="30dp"
+            />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/recom_good"
+        android:layout_marginLeft="250dp"
+        android:scaleX="0.5"
+        android:scaleY="0.5" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/recom_bad"
+        android:layout_marginLeft="300dp"
+        android:scaleX="0.5"
+        android:scaleY="0.5" />
+
+        </FrameLayout>
+
+</LinearLayout>
+
+</LinearLayout>

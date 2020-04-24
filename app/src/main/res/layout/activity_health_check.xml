@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Health_check">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ff8550"
+            >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="건강식 찾기"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+            <Button
+                android:id="@+id/buttontoast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Toastbarcode" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="207dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:scaleX="0.6"
+                    android:scaleY="0.6"
+                    android:src="@drawable/layout1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="100dp"
+                        android:text="제품이름 : " />
+                        <TextView
+                            android:id="@+id/nametextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:text=" 기다리는중" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="100dp"
+                        android:text="바코드번호 : " />
+                        <TextView
+                            android:id="@+id/barcodetextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:text=" 기다리는중" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="40dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="탄수화물 : \n단백질 : \n나트륨 : \n지방 : \n당 : \n포화지방 : "
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/resulttextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="숫자들" />
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/piechart"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                         >
+
+                        </com.github.mikephil.charting.charts.PieChart>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="result"
+                                android:id="@+id/textView_main_result"
+                                android:textColor="@android:color/black"
+                                />
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="6"
+                                android:layout_margin="5dp"
+                                android:padding="5dp"
+                                android:id="@+id/listView_main_list"/>
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/button_main_all"
+                                android:text="확인"
+                                android:layout_marginLeft="300dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="건강조합 제품"
+                                android:textColor="@android:color/black"
+                                android:layout_marginTop="70dp"
+                                android:layout_marginLeft="155dp"
+                                android:textSize="17dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="60dp"
+                                android:scaleX="0.97"
+                                android:scaleY="0.9"
+                                android:src="@drawable/botton2" />
+
+                            <Button
+                                android:id="@+id/AddButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="140dp"
+                                android:layout_marginLeft="300dp"
+                                android:background="#FFFFFF"
+                                android:text="조합추가" />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+                        <!--
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="건강조합 제품"
+                            android:textColor="@android:color/black"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="-45dp"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                            -->
+
+        <!--
+        <ImageButton
+            android:id="@+id/hotbaButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="450dp"
+            android:background="#FF8500"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/chic_icon" />
+-->
+                    </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
